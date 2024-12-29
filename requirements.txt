@@ -4,3 +4,4 @@ werkzeug
 flask_wtf
 numpy
 wtforms
+pytest
