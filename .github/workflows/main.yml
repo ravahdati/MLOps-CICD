@@ -50,11 +50,3 @@ jobs:
 
       - name: Install Railway CLI
         run: npm install -g @railway/cli
-
-      - name: Deploy to Railway
-        env:
-          SVC_ID: "7dda6f14-56e7-4094-bd13-c919a90d304b"
-          RAILWAY_TOKEN: "02ce1ef1-9349-4557-82ce-961ac792465c"
-          RAILWAY_PROJECT_TOKEN: "6430e6db-28ed-4f18-95a8-9b7306bc3fc3"
-        run: |
-          RAILWAY_PROJECT_TOKEN=${{ env.RAILWAY_PROJECT_TOKEN }} railway up --service=${{ env.SVC_ID }}
